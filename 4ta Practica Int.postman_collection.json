@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "d4db7bf9-720e-40c2-a3e1-c744ed1c51f9",
+		"name": "4ta Practica Int",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31091549"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/users/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/users/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "documents",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Identification",
+							"description": "test1",
+							"type": "file",
+							"src": "/Users/Eric/Desktop/Captura de pantalla 2019-03-18 a las 18.22.31.png"
+						},
+						{
+							"key": "Address",
+							"type": "file",
+							"src": "/Users/Eric/Desktop/Captura de Pantalla 2023-09-01 a las 21.03.26.png"
+						},
+						{
+							"key": "Account status",
+							"type": "file",
+							"src": "/Users/Eric/Desktop/Captura de Pantalla 2023-04-25 a las 11.20.28.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/users/documents",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						"documents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": [
+								"/Users/Eric/Desktop/Captura de pantalla 2019-03-18 a las 18.22.31.png",
+								"/Users/Eric/Desktop/Captura de pantalla 2019-03-18 a las 18.22.31.png"
+							]
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/users/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profile image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": [
+								"/Users/Eric/Desktop/Captura de pantalla 2019-03-18 a las 18.22.31.png",
+								"/Users/Eric/Desktop/Captura de pantalla 2019-03-18 a las 18.22.31.png"
+							]
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/users/profiles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						"profiles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "premium user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/users/premium",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						"premium"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
