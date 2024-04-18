@@ -1,0 +1,102 @@
+[
+	{
+		"_id": {
+			"$oid": "6621851776443817aa5ac0c5"
+		},
+		"name": "Laura",
+		"lastName": "Martinez",
+		"email": "laura.martinez@example.com",
+		"age": "24",
+		"password": "$2a$12$B9AADMhU/eE99zrf3M1p2uw51z2KfljslOhZP2NcBzJc7PmOBh9.G",
+		"documents": [
+			{
+				"reference": "62b2f0a8b9e77c3a3411d2f4",
+				"fieldName": "ID Card"
+			}
+		],
+		"last_connection": "2023-10-15T08:30:00Z",
+		"role": "user",
+		"courses": []
+	},
+	{
+		"_id": {
+			"$oid": "6621851776443817aa5ac0c6"
+		},
+		"name": "David",
+		"lastName": "Ruiz",
+		"email": "david.ruiz@example.com",
+		"age": "30",
+		"password": "$2a$12$b5Q7cNqwHOgf4jh4xhm8BOunWDm0p8qhQNM0649BHwuxjPbAVDnSq",
+		"documents": [],
+		"last_connection": "2023-10-12T10:15:00Z",
+		"role": "admin",
+		"courses": [
+			{
+				"course": "62b2f0a8b9e77c3a3411d3b5"
+			}
+		]
+	},
+	{
+		"_id": {
+			"$oid": "6621851776443817aa5ac0c7"
+		},
+		"name": "Sofía",
+		"lastName": "Garcia",
+		"email": "sofia.garcia@example.com",
+		"age": "22",
+		"password": "$2a$12$xr63.NgwwhzEWLifl1gm3O5YVpLIQ/ji2w4hIXljkG3yaStuzlcv6",
+		"documents": [
+			{
+				"reference": "62b2f0a8b9e77c3a3411d2f5",
+				"fieldName": "Passport"
+			}
+		],
+		"last_connection": "2023-10-14T16:20:00Z",
+		"role": "premium",
+		"courses": [
+			{
+				"course": "62b2f0a8b9e77c3a3411d3b6"
+			},
+			{
+				"course": "62b2f0a8b9e77c3a3411d3b7"
+			}
+		]
+	},
+	{
+		"_id": {
+			"$oid": "6621851776443817aa5ac0c8"
+		},
+		"name": "admin",
+		"lastName": "Coder",
+		"email": "adminCoder@coder.com",
+		"age": "100",
+		"password": "$2b$10$vdoA/Vl840cyKfo7D6JciuOdOspGRFhbDIuTaWg1MWbnVHLP/wrkC",
+		"documents": [
+			{
+				"reference": "62b2f0a8b9e77c3a3411d2f6",
+				"fieldName": "Driver's License"
+			}
+		],
+		"last_connection": "2023-10-10T09:00:00Z",
+		"role": "user",
+		"courses": []
+	},
+	{
+		"_id": {
+			"$oid": "6621851776443817aa5ac0c9"
+		},
+		"name": "Ana",
+		"lastName": "Torres",
+		"email": "ana.torres@example.com",
+		"age": "26",
+		"password": "$2a$12$ITT1B4DuRcvTw9oBEViM4.zzbNTZZd96PUMNPwsOy7BWdzS4L45Y.",
+		"documents": [],
+		"last_connection": "2023-10-11T11:30:00Z",
+		"role": "user",
+		"courses": [
+			{
+				"course": "62b2f0a8b9e77c3a3411d3b8"
+			}
+		]
+	}
+]

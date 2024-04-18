@@ -50,15 +50,15 @@ app.use("/api/users", jwtRouter);
 
 const SERVER_PORT = config.port;
 app.listen(SERVER_PORT, () => {
-  console.log("Servidor escuchando por el puerto: " + SERVER_PORT);
+	console.log("Servidor escuchando por el puerto: " + SERVER_PORT);
 });
 
 const mongoInstance = async () => {
-  try {
-    await MongoSingleton.getInstance();
-  } catch (error) {
-    console.error(error);
-    process.exit();
-  }
+	try {
+		await MongoSingleton.getInstance();
+	} catch (error) {
+		console.error(error);
+		process.exit();
+	}
 };
 mongoInstance();

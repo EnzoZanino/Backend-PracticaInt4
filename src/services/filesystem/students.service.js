@@ -73,7 +73,7 @@ export default class StudentService {
 			throw Error(`Error consultando los usuarios por archivo, valide el archivo: ${
 				this.#dirPath
 			},
-             detalle del error: ${error}`);
+			detalle del error: ${error}`);
 		}
 	};
 }

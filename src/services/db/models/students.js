@@ -3,52 +3,52 @@ import mongoose from "mongoose";
 const collectionName = "students";
 
 const stringTypeSchemaUniqueRequired = {
-  type: String,
-  unique: true,
-  required: true,
+	type: String,
+	unique: true,
+	required: true,
 };
 
 const stringTypeSchemaNonUniqueRequired = {
-  type: String,
-  required: true,
+	type: String,
+	required: true,
 };
 
 const studentSchema = new mongoose.Schema({
-  name: stringTypeSchemaNonUniqueRequired,
-  lastName: stringTypeSchemaNonUniqueRequired,
-  email: stringTypeSchemaUniqueRequired,
-  age: stringTypeSchemaNonUniqueRequired,
-  password: stringTypeSchemaNonUniqueRequired,
-  documents: [
-    {
-      reference: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "documentos",
-      },
-      fieldName: {
-        type: String,
-      },
-    },
-  ],
-  last_connection: {
-    type: String,
-  },
-  role: {
-    type: String,
-    default: "user",
-    enum: ["user", "admin", "premium"],
-  },
-  courses: {
-    type: [
-      {
-        course: {
-          type: mongoose.Schema.Types.ObjectId,
-          ref: "courses",
-        },
-      },
-    ],
-    default: [],
-  },
+	name: stringTypeSchemaNonUniqueRequired,
+	lastName: stringTypeSchemaNonUniqueRequired,
+	email: stringTypeSchemaUniqueRequired,
+	age: stringTypeSchemaNonUniqueRequired,
+	password: stringTypeSchemaNonUniqueRequired,
+	documents: [
+		{
+			reference: {
+				type: mongoose.Schema.Types.ObjectId,
+				ref: "documentos",
+			},
+			fieldName: {
+				type: String,
+			},
+		},
+	],
+	last_connection: {
+		type: String,
+	},
+	role: {
+		type: String,
+		default: "user",
+		enum: ["user", "admin", "premium"],
+	},
+	courses: {
+		type: [
+			{
+				course: {
+					type: mongoose.Schema.Types.ObjectId,
+					ref: "courses",
+				},
+			},
+		],
+		default: [],
+	},
 });
 
 /**
@@ -56,7 +56,7 @@ const studentSchema = new mongoose.Schema({
  * caso llamamos al metodo populate.
  */
 studentSchema.pre("findOne", function () {
-  this.populate("courses.course");
+	this.populate("courses.course");
 });
 const studentsModel = mongoose.model(collectionName, studentSchema);
 export default studentsModel;
